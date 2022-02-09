@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.a41565c6.css",
-    "main.js": "/static/js/main.c4b41a27.js",
-    "static/media/background.svg": "/static/media/background.27c837fe37f9aa0bb34c2e6e29c7fcc2.svg",
-    "static/media/player.svg": "/static/media/player.04ef440be5adec73fac761341b342f08.svg",
-    "static/media/logo.png": "/static/media/logo.5cbb6eb4318428d40915.png",
-    "static/media/ticking-timebomb-bb.regular.ttf": "/static/media/ticking-timebomb-bb.regular.73950a4698397f4efb30.ttf",
-    "static/media/caset.svg": "/static/media/caset.cbdaca1db3e8f0d3e627ab09e4057e6c.svg",
-    "static/media/caset-circle.svg": "/static/media/caset-circle.ee23b03e8b2c4f22bb02eb0c234f1bc2.svg",
-    "index.html": "/index.html",
-    "static/media/nav-btn-down.svg": "/static/media/nav-btn-down.49123c5f0718734c1ef9c40e7f03447a.svg",
-    "static/media/right-nav-btn-down.svg": "/static/media/right-nav-btn-down.7c2d218e9ab024ff192925d93157aeb1.svg",
-    "static/media/left-nav-btn-down.svg": "/static/media/left-nav-btn-down.be50c5546000ca5a049d0a4e580758fe.svg",
-    "static/media/nav-btn.svg": "/static/media/nav-btn.5a4cc8b13e426b1a9f66260d8df153ee.svg",
-    "static/media/right-nav-btn.svg": "/static/media/right-nav-btn.952476e7d967fe650263e59aabc003ba.svg",
-    "static/media/left-nav-btn.svg": "/static/media/left-nav-btn.9e4b7909753fd651cbef2459d148a9b0.svg",
-    "static/media/play.svg": "/static/media/play.6e1e8e6273b67002a71c9aa17a4d35bf.svg",
-    "static/media/plus.svg": "/static/media/plus.efe11cecab240cdff09146a01d3e5d31.svg",
-    "static/media/pause.svg": "/static/media/pause.ad4211c1008aaa6563f41ea73c4b66ae.svg",
-    "static/media/minus.svg": "/static/media/minus.dc0d8b948f55296c4cfdae211e6112b2.svg",
-    "main.a41565c6.css.map": "/static/css/main.a41565c6.css.map",
-    "main.c4b41a27.js.map": "/static/js/main.c4b41a27.js.map"
+    "main.css": "/radio-boomer/static/css/main.1be75b2a.css",
+    "main.js": "/radio-boomer/static/js/main.6710ff7d.js",
+    "static/media/background.svg": "/radio-boomer/static/media/background.27c837fe37f9aa0bb34c2e6e29c7fcc2.svg",
+    "static/media/player.svg": "/radio-boomer/static/media/player.04ef440be5adec73fac761341b342f08.svg",
+    "static/media/logo.png": "/radio-boomer/static/media/logo.5cbb6eb4318428d40915.png",
+    "static/media/ticking-timebomb-bb.regular.ttf": "/radio-boomer/static/media/ticking-timebomb-bb.regular.73950a4698397f4efb30.ttf",
+    "static/media/caset.svg": "/radio-boomer/static/media/caset.cbdaca1db3e8f0d3e627ab09e4057e6c.svg",
+    "static/media/caset-circle.svg": "/radio-boomer/static/media/caset-circle.ee23b03e8b2c4f22bb02eb0c234f1bc2.svg",
+    "index.html": "/radio-boomer/index.html",
+    "static/media/nav-btn-down.svg": "/radio-boomer/static/media/nav-btn-down.49123c5f0718734c1ef9c40e7f03447a.svg",
+    "static/media/right-nav-btn-down.svg": "/radio-boomer/static/media/right-nav-btn-down.7c2d218e9ab024ff192925d93157aeb1.svg",
+    "static/media/left-nav-btn-down.svg": "/radio-boomer/static/media/left-nav-btn-down.be50c5546000ca5a049d0a4e580758fe.svg",
+    "static/media/nav-btn.svg": "/radio-boomer/static/media/nav-btn.5a4cc8b13e426b1a9f66260d8df153ee.svg",
+    "static/media/right-nav-btn.svg": "/radio-boomer/static/media/right-nav-btn.952476e7d967fe650263e59aabc003ba.svg",
+    "static/media/left-nav-btn.svg": "/radio-boomer/static/media/left-nav-btn.9e4b7909753fd651cbef2459d148a9b0.svg",
+    "static/media/play.svg": "/radio-boomer/static/media/play.6e1e8e6273b67002a71c9aa17a4d35bf.svg",
+    "static/media/plus.svg": "/radio-boomer/static/media/plus.efe11cecab240cdff09146a01d3e5d31.svg",
+    "static/media/pause.svg": "/radio-boomer/static/media/pause.ad4211c1008aaa6563f41ea73c4b66ae.svg",
+    "static/media/minus.svg": "/radio-boomer/static/media/minus.dc0d8b948f55296c4cfdae211e6112b2.svg",
+    "main.1be75b2a.css.map": "/radio-boomer/static/css/main.1be75b2a.css.map",
+    "main.6710ff7d.js.map": "/radio-boomer/static/js/main.6710ff7d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a41565c6.css",
-    "static/js/main.c4b41a27.js"
+    "static/css/main.1be75b2a.css",
+    "static/js/main.6710ff7d.js"
   ]
 }
