@@ -63,14 +63,14 @@ const CasetCircle = styled.div`
   background-size: cover;
   position: absolute;
   z-index: 100;
-  animation: rotate-caset-circle 5s infinite linear;
+  animation: ${props => props.animation === 'play' ? `rotate-caset-circle 5s infinite linear` : 'none'};
 `
 
-const Caset = ({ src, isAlbumImage }) => {
+const Caset = ({ src, isAlbumImage, animation }) => {
   return (
     <Body>
-      <CasetCircle style={{ left: `${castumVW * (1.4 * 3.65)}px`, top: `${castumVW * (1.4 * 3.4)}px` }} />
-      <CasetCircle style={{ left: `${castumVW * (1.4 * 10.55)}px`, top: `${castumVW * (1.4 * 3.4)}px` }} />
+      <CasetCircle animation={animation} style={{ left: `${castumVW * (1.4 * 3.65)}px`, top: `${castumVW * (1.4 * 3.4)}px` }} />
+      <CasetCircle animation={animation} style={{ left: `${castumVW * (1.4 * 10.55)}px`, top: `${castumVW * (1.4 * 3.4)}px` }} />
       <CasetBackground src={casetSVG} />
       <BlurCasetBackground src={isAlbumImage ? src : ''} />
       <Background src={isAlbumImage ? src : ''} />

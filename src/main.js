@@ -138,7 +138,7 @@ const Main = () => {
           }
         }}
       />
-      <Caset isAlbumImage={currentTrack.isAlbumImage} src={`${host}/picture?id=${currentTrack.id}`} />
+    <Caset animation={playerState.isPlay ? 'play' : 'pause'} isAlbumImage={currentTrack.isAlbumImage} src={`${host}/picture?id=${currentTrack.id}`} />
       <audio ref={audioRef} hidden disableRemotePlayback={true} x-webkit-airplay='allow' preload='none'>
         <source src={`${host}/radio`} type='audio/webm'></source>
       </audio>
