@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react'
 import styled from 'styled-components'
-import { useSocket, useHost } from './socket-provider'
 import Player from './player'
 import Navigation from './navigation'
 import Caset from './caset'
