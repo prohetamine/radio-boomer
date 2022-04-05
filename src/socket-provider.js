@@ -7,12 +7,11 @@ const SocketProvider = ({ baseURL, children }) => {
   const [socket, setSocket] = useState(null)
 
   useEffect(() => {
-    const socket = io(baseURL, {
-      transports : ['websocket']
-    })
+    const socket = io(baseURL)
 
-    socket.on('connect_error', () => {
-      alert('Я не подключил сервер, ничего не работает...')
+    socket.on('connect_error', (err) => {
+      console.log(err)
+      alert('Не удалось подключиться к серверу')
       socket.close()
     })
 

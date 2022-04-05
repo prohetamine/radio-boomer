@@ -4,6 +4,7 @@ import { useSocket, useHost } from './socket-provider'
 import Player from './player'
 import Navigation from './navigation'
 import Caset from './caset'
+import { io } from 'socket.io-client'
 import logoPNG from './assets/images/logo.png'
 
 const procent = window.innerWidth / 100
@@ -36,10 +37,10 @@ const Logo = styled.div`
   background-position: cover;
 `
 
+const host = 'https://servetamine.ru/'
+
 const Main = () => {
   const audioRef = useRef()
-      , socket = useSocket()
-      , host = useHost()
 
   const [playerState, setPlayerState] = useState({
     isPlay: false,
@@ -55,10 +56,16 @@ const Main = () => {
     isAlbumImage: false
   })
 
-  const audioNode = audioRef.current
-
   useEffect(() => {
-    if (socket) {
+    const socket = io(host)
+
+    socket.on('connect_error', (err) => {
+      console.log(err)
+      alert('Не удалось подключиться к серверу')
+      socket.close()
+    })
+
+    socket.on('connect', () => {
       socket.on('onUse', async current => {
         setCurrentTrack(oldCurrent => ({
           ...oldCurrent,
@@ -66,7 +73,7 @@ const Main = () => {
           id: current.id
         }))
 
-        const fullCurrent = await fetch(`${host}/info?id=${current.id}`).then(d => d.json())
+        const fullCurrent = await fetch(`${host}info?id=${current.id}`).then(d => d.json())
 
         if (!fullCurrent.common) {
           setCurrentTrack(oldCurrent => ({
@@ -89,10 +96,16 @@ const Main = () => {
           isAlbumImage: fullCurrent.isAlbumImage || false
         }))
       })
+    })
 
-      return () => socket.off('onUse')
+    return () => {
+      socket.off('connect_error')
+      socket.off('connect')
+      socket.close()
     }
-  }, [socket, host])
+  }, [])
+
+  const audioNode = audioRef.current
 
   return (
     <Body>
@@ -138,9 +151,9 @@ const Main = () => {
           }
         }}
       />
-    <Caset animation={playerState.isPlay ? 'play' : 'pause'} isAlbumImage={currentTrack.isAlbumImage} src={`${host}/picture?id=${currentTrack.id}`} />
+      <Caset animation={playerState.isPlay ? 'play' : 'pause'} isAlbumImage={currentTrack.isAlbumImage} src={`https://servetamine.ru/picture?id=${currentTrack.id}`} />
       <audio ref={audioRef} hidden disableRemotePlayback={true} x-webkit-airplay='allow' preload='none'>
-        <source src={`${host}/radio`} type='audio/webm'></source>
+        <source src={`${host}radio`} type='audio/webm'></source>
       </audio>
     </Body>
   )

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/radio-boomer/static/css/main.1be75b2a.css",
-    "main.js": "/radio-boomer/static/js/main.08762446.js",
+    "main.js": "/radio-boomer/static/js/main.1255e651.js",
     "static/media/background.svg": "/radio-boomer/static/media/background.27c837fe37f9aa0bb34c2e6e29c7fcc2.svg",
     "static/media/player.svg": "/radio-boomer/static/media/player.04ef440be5adec73fac761341b342f08.svg",
     "static/media/logo.png": "/radio-boomer/static/media/logo.5cbb6eb4318428d40915.png",
@@ -20,10 +20,10 @@
     "static/media/pause.svg": "/radio-boomer/static/media/pause.ad4211c1008aaa6563f41ea73c4b66ae.svg",
     "static/media/minus.svg": "/radio-boomer/static/media/minus.dc0d8b948f55296c4cfdae211e6112b2.svg",
     "main.1be75b2a.css.map": "/radio-boomer/static/css/main.1be75b2a.css.map",
-    "main.08762446.js.map": "/radio-boomer/static/js/main.08762446.js.map"
+    "main.1255e651.js.map": "/radio-boomer/static/js/main.1255e651.js.map"
   },
   "entrypoints": [
     "static/css/main.1be75b2a.css",
-    "static/js/main.08762446.js"
+    "static/js/main.1255e651.js"
   ]
 }
