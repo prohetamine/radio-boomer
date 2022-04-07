@@ -29,6 +29,8 @@ const Logo = styled.div`
 const Button = styled.div`
   width: 50vh;
   height: 50vh;
+  min-height: 70px;
+  min-width: 70px;
   margin-left: 25px;
   border: none;
   background: #2E2E2C;
